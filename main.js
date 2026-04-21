@@ -117,8 +117,6 @@ function setSwatchColor(hex, name) {
   activeColorN = name;
   document.documentElement.style.setProperty('--swatch', hex);
   document.getElementById('activeColorLabel').textContent = name;
-  document.getElementById('navColorName').textContent = name;
-  document.getElementById('navDot').style.background = hex;
 
   /* update marquee text colour */
   document.querySelectorAll('.marquee-track span')
@@ -199,7 +197,6 @@ function showToast(msg) {
 /* ═══════════════════════════════
    INIT
 ═══════════════════════════════ */
-document.getElementById('navDot').style.background = activeColor;
 
 /* apply glow as soon as model loads */
 document.getElementById('viewer').addEventListener('load', () => {
