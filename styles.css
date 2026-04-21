@@ -149,6 +149,7 @@ model-viewer {
   letter-spacing: 0.22em; text-transform: uppercase;
   color: var(--swatch); padding-right: 48px; opacity: 0.9;
   transition: color 0.5s ease;
+  z-index: 1;
 }
 
 /* ═══════════════════════════════
