@@ -152,13 +152,13 @@ function pickSize(btn) {
 ═══════════════════════════════ */
 function placeOrder() {
   const msg = encodeURIComponent(
-    'مرحباً! أريد طلب:\n' +
-    'المنتج: The Tee\n' +
-    'اللون: ' + activeColorN + '\n' +
-    'المقاس: ' + activeSize + '\n' +
-    'السعر: 650 ج.م'
+    'Hello! I would like to order:\n' +
+    'Product: The Tee\n' +
+    'Color: ' + activeColorN + '\n' +
+    'Size: ' + activeSize + '\n' +
+    'Price: 650 EGP'
   );
-  window.open('https://wa.me/+201000000000?text=' + msg, '_blank');
+  window.open('https://wa.me/+201211717038?text=' + msg, '_blank');
   showToast('Order — ' + activeColorN + ' / ' + activeSize);
 }
 
